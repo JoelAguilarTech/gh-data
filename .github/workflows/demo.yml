@@ -46,8 +46,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: dist-files
-      - name: List files
-        run: ls -la
+      # - name: List files
+      #   run: ls -la
       - name: Output JS filename
         run: echo "JS file is ${{ needs.build.outputs.js-file}}"
       - name: Deploy
