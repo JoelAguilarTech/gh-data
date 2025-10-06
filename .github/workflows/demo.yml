@@ -46,7 +46,7 @@ jobs:
 
       - name: List files in dist
         run: |
-          pwd
-          ls -la dist
+          cd assets
+          ls -la
       - name: Deploy
         run: echo "Deploying..."
